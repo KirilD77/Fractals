@@ -158,7 +158,7 @@ class Newton {
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
     for (let x = left - 10; x < right + 10; x++) {
       for (let y = top - 10; y < bottom + 10; y++) {
-        let yo = new Complex1(x / 500, y / 500);
+        let yo = new Complex1(x / this.w, y / this.h);
         let ayy = N(yo);
         let ayy2 = N(ayy);
         let n = 0;
